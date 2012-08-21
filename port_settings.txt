@@ -1,3 +1,5 @@
+This is the initial test of a change for git testing.
+
 Unzip CPRS 26_76.zip and extract all files to:
 
 C:\program files
