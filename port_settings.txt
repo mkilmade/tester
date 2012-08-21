@@ -1,0 +1,31 @@
+Unzip CPRS 26_76.zip and extract all files to:
+
+C:\program files
+     \vista
+          \CPRS_26_76   <== add this new folder under vista
+
+CHEY108 CPRS GUI SHORTCUT TARGET SETTINGS:
+
+"C:\Program Files\VISTA\CPRS_26_76\CPRSChart.exe" s=10.4.229.202 p=9774
+
+VLD CPRS GUI SHORTCUT TARGET SETTINGS:
+
+"C:\Program Files\VISTA\CPRS_26_76\CPRSChart.exe" s=COR.FO-ALBANY.MED.VA.GOV  p=9294
+
+CHEY108 CPRS GUI SHORTCUT TARGET SETTINGS:
+
+"C:\Program Files\VISTA\CPRS_26_76\CPRSChart.exe" s=10.4.229.203  p=9801
+
+
+File 200 settings needed for CPRS:
+
+RESTRICT PATIENT SELECTION: N  NO
+PATIENT SELECTION LIST: 
+Select CPRS TAB: COR// 
+  CPRS TAB: COR// 
+  EFFECTIVE DATE: FEB 19,2008// 
+  EXPIRATION DATE: 
+Select CPRS TAB: 
+
+Assign broker option OR CPRS GUI CHART to your secondary menu
+Select SECONDARY MENU OPTIONS: OR CPRS GUI CHART//
