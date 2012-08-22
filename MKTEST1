@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Export generator="Cache" version="24" zv="Cache for Windows (x86-32) 2010.2.3 (Build 702)" ts="2012-08-22 08:54:55">
-<Routine name="MKTEST1" type="INT" languagemode="0" timestamp="61985,63843"><![CDATA[
+<Export generator="Cache" version="24" zv="Cache for Windows (x86-32) 2010.2.3 (Build 702)" ts="2012-08-22 09:31:57">
+<Routine name="MKTEST1" type="INT" languagemode="0" timestamp="62691,34313"><![CDATA[
 MKTEST1 ; 09/15/2010 11:47:23
  ;
 EN ;
- W !,"hello boddddst4 world 5x"   
+ W !,"hello git III!!!"   
  q
  ;
 LEDIIV ; -- set InLEDIV property in lsrp.sc.component
