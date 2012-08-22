@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Export generator="Cache" version="24" zv="Cache for Windows (x86-32) 2010.2.3 (Build 702)" ts="2012-08-22 11:18:58">
-<Routine name="MKTEST2" type="INT" languagemode="0" timestamp="62691,40703"><![CDATA[
+<Export generator="Cache" version="24" zv="Cache for Windows (x86-32) 2010.2.3 (Build 702)" ts="2012-08-22 16:02:08">
+<Routine name="MKTEST2" type="INT" languagemode="0" timestamp="62691,57717"><![CDATA[
 MKTEST2 ;
  ;
 EN ;
- W !,"hello wo,,,,rldXCCC IIII"   
+ W !,"hello wo,,,,rldXCCC github test"   
  q 
  ;
 Mail ;
