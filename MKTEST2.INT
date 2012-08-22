@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="24" zv="Cache for Windows (x86-32) 2010.2.3 (Build 702)" ts="2012-08-22 11:18:58">
+<Routine name="MKTEST2" type="INT" languagemode="0" timestamp="62691,40703"><![CDATA[
+MKTEST2 ;
+ ;
+EN ;
+ W !,"hello wo,,,,rldXCCC IIII"   
+ q 
+ ;
+Mail ;
+ Set Mailer = ##class(%Net.SMTP).%New()
+ // Fill in the name of your mail server
+ Set Mailer.smtpserver = "smtp-server.nycap.rr.com"
+ // Create a Message object and fill in From, To, Subject
+ Set Msg = ##class(%Net.MailMessage).%New()
+ Set Msg.From="mkilmade@nycap.rr.com"
+ Do Msg.To.Insert("mkilmade@nycap.rr.com")
+ Set Msg.Subject = "Test Message from Cache"
+ // Add message content
+ Do Msg.TextData.Write("Hi Mike")
+ // Send the message and close objects
+ Do Mailer.Send(Msg)
+ Write !,"SENT"
+ q
+ ;
+cmpX ;
+ Set result=##class(%ResultSet).%New("%Library.Routine:Compare")
+ Set sc=result.Execute("USER","MKTEST","USER","MKHTTP")
+ If 'sc Do DisplayError^%apiOBJ(sc) Quit
+ While result.Next(.sc) {
+ 	If 'sc Quit
+ 	Write result.Data("LineNo1"),!
+ 	Write result.Data("Line1"),!
+ 	Write result.Data("LineNo2"),!
+ 	Write result.Data("Line2"),!
+ }
+ If 'sc Do DisplayError^%apiOBJ(sc)
+ Quit
+]]></Routine>
+</Export>
